@@ -165,27 +165,27 @@ class NotificationService : Service() {
     }
 
     private fun getSmallIcon(context: Context): Int {
-        return getCustomIconOrDefault(context, manifestIcon, null, R.drawable.exo_icon_circular_play)
+        return getCustomIconOrDefault(context, manifestIcon, null, android.R.drawable.exo_icon_circular_play)
     }
 
     private fun getPlayIcon(context: Context, resourceName: String?): Int {
-        return getCustomIconOrDefault(context, manifestIconPlay, resourceName, R.drawable.exo_icon_play)
+        return getCustomIconOrDefault(context, manifestIconPlay, resourceName, android.R.drawable.exo_icon_play)
     }
 
     private fun getPauseIcon(context: Context, resourceName: String?): Int {
-        return getCustomIconOrDefault(context, manifestIconPause, resourceName, R.drawable.exo_icon_pause)
+        return getCustomIconOrDefault(context, manifestIconPause, resourceName, android.R.drawable.exo_icon_pause)
     }
 
     private fun getNextIcon(context: Context, resourceName: String?): Int {
-        return getCustomIconOrDefault(context, manifestIconNext, resourceName, R.drawable.exo_icon_next)
+        return getCustomIconOrDefault(context, manifestIconNext, resourceName, android.R.drawable.exo_icon_next)
     }
 
     private fun getPrevIcon(context: Context, resourceName: String?): Int {
-        return getCustomIconOrDefault(context, manifestIconPrev, resourceName, R.drawable.exo_icon_previous)
+        return getCustomIconOrDefault(context, manifestIconPrev, resourceName, android.R.drawable.exo_icon_previous)
     }
 
     private fun getStopIcon(context: Context, resourceName: String?): Int {
-        return getCustomIconOrDefault(context, manifestIconStop, resourceName, R.drawable.exo_icon_stop)
+        return getCustomIconOrDefault(context, manifestIconStop, resourceName, android.R.drawable.exo_icon_stop)
     }
 
     private fun getCustomIconOrDefault(context: Context, manifestName: String, resourceName: String?, defaultIcon: Int): Int {
